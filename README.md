@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Engineer Portfolio - Dhaksha Charan
+
+A premium, modern portfolio website showcasing AI engineering expertise, built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
+
+## Features
+
+- **Modern Dark Theme**: Futuristic design inspired by cutting-edge AI platforms
+- **Smooth Animations**: Premium animations using Framer Motion
+- **Fully Responsive**: Optimized for all devices
+- **Performance Optimized**: Fast loading with Next.js 15
+- **SEO Friendly**: Proper meta tags and semantic HTML
+- **Accessible**: Built with accessibility best practices
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Fonts**: Inter & JetBrains Mono
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd ai-portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Update Personal Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Contact Details** (`components/Contact.tsx`):
+   - Update email, LinkedIn, GitHub links
+   - Update location
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Social Links** (`components/Footer.tsx`):
+   - Update GitHub, LinkedIn, Email URLs
 
-## Deploy on Vercel
+3. **Projects** (`components/Projects.tsx`):
+   - Replace placeholder project images
+   - Update GitHub and demo links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Resume Link**:
+   - Update resume download link in Hero and Contact sections
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Add Project Images
+
+Place your project images in the `public/projects/` directory:
+- `legal-ai.jpg`
+- `havenpath.jpg`
+- `f1-agent.jpg`
+
+### Modify Color Scheme
+
+Edit `tailwind.config.ts` to customize the color palette.
+
+## Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## Project Structure
+
+```
+ai-portfolio/
+├── app/
+│   ├── layout.tsx       # Root layout with fonts and metadata
+│   ├── page.tsx         # Main page component
+│   └── globals.css      # Global styles
+├── components/
+│   ├── Navbar.tsx       # Navigation bar
+│   ├── Hero.tsx         # Hero section
+│   ├── About.tsx        # About section
+│   ├── Experience.tsx   # Experience timeline
+│   ├── Projects.tsx     # Featured projects
+│   ├── Skills.tsx       # Skills cards
+│   ├── Certifications.tsx
+│   ├── Achievements.tsx
+│   ├── Contact.tsx      # Contact form and info
+│   ├── Footer.tsx       # Footer with social links
+│   └── ScrollProgress.tsx
+├── public/              # Static assets
+└── tailwind.config.ts   # Tailwind configuration
+```
+
+## Deployment
+
+Deploy easily on Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=<your-repo-url>)
+
+Or manually:
+1. Push to GitHub
+2. Import project in Vercel
+3. Deploy
+
+## Performance Tips
+
+- Images should be optimized (use WebP format)
+- Keep images under 500KB each
+- Use Next.js Image component for automatic optimization
+
+## License
+
+MIT License - feel free to use this template for your portfolio
+
+## Contact
+
+Dhaksha Charan - Applied AI Engineer
+
+---
+
+Built with ❤️ using Next.js and Framer Motion
